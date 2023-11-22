@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ICPWorkshop23Tiet_backend": {
+      "main": "src/ICPWorkshop23Tiet_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICPWorkshop23Tiet_frontend": {
+      "dependencies": [
+        "ICPWorkshop23Tiet_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ICPWorkshop23Tiet_frontend/src/index.html"
+      },
+      "source": [
+        "src/ICPWorkshop23Tiet_frontend/assets",
+        "dist/ICPWorkshop23Tiet_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
